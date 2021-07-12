@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://web.tinode.co/.well-known/assetlinks.json\" }]</string>
+    <string name="tinode_url" translatable="false">https://tinode.co</string>
+    <string name="emulator_host_name" translatable="false">10.0.2.2:6060</string>
+    <string name="test_host_name" translatable="false">192.168.1.102:6060</string>
+
+    <string name="app_name" translatable="false">Blue House</string>
+    <string name="app_name_full" translatable="false">Blue House</string>
+    <string name="app_version">Version</string>
+    <string name="copyright" translatable="false">© 2020 – 2021 Blue House</string>
+    <string name="tinode" translatable="false">Blue House</string>
+
+    <string name="login_hint">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="new_message_hint">New message</string>
+    <string name="send_message_button_hint">Send message</string>
+    <string name="send_image_button_hint">Send image</string>
+    <string name="send_file_button_hint">Send file</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="app_description" translatable="false">Blue House</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_new">Login</string>
+    <string name="password_new">Password</string>
+    <string name="full_name">Blue House Co.</string>
+    <string name="tinode_logo" translatable="false">Blue House Logo</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="settings_host_name">Server address</string>
+    <string name="settings_use_tls">Use secure connection</string>
+    <string name="settings_wire_transport">Wire transport</string>
+    <string name="settings_tls_explained">Encrypt connection to server</string>
+    <string name="settings_host_name_explained">Connecting to \'%1$s\'</string>
+    <string name="settings_wire_explained">Using \'%1$s\'</string>
+
+    <!-- access mode definitions -->
+    <string name="modeReadOnly">read-only</string>
+    <string name="modeAdmin">admin</string>
+    <string name="modeOwner">owner</string>
+    <string name="modeBlocked">blocked</string>
+    <!-- mode-like access statuses -->
+    <string name="modeInvited">invited</string>
+    <string name="modeRequested">requested</string>
+    <string name="modeUndefined">undefined</string>
+    <string name="modePending">pending</string>
+
+    <!-- Menu actions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_mute">Mute conversation</string>
+    <string name="action_unmute">Unmute conversation</string>
+    <string name="action_clear_messages">Clear all messages</string>
+    <string name="action_view_contact">View contact</string>
+    <string name="action_new_chat">New chat</string>
+    <string name="action_about">About</string>
+    <string name="action_search">Search</string>
+    <string name="action_add_contact">Add contact</string>
+    <string name="action_send_now">Send now</string>
+    <string name="action_view_details">View details</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_offline">Working offline</string>
+    <string name="action_delete_group">Delete conversation…</string>
+    <string name="action_leave_topic">Leave conversation…</string>
+
+    <string name="avatar">Avatar picture</string>
+    <string name="select_image">Select image</string>
+    <string name="select_file">Select file</string>
+    <string name="image_is_unavailable">Image is unavailable</string>
+    <string name="error_login_failed">Login failed: </string>
+    <string name="error_connection_failed">Connection failed: </string>
+    <string name="login_required">Login required</string>
+    <string name="password_required">Password required</string>
+    <string name="error_new_account_failed">Account registration failed:</string>
+    <string name="no_chats">You have no chats\n\n¯\\_(ツ)_/¯</string>
+
+    <!-- Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
+     alphabet using ListView fast scroll. -->
+    <string name="alphabet">\ ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="tinode_invite_subject">Check out Blue House Messenger</string>
+    <string name="tinode_invite_body">Check out Blue House Messenger. Download it from https://BlueHouse.co</string>
+
+    <string name="profile_action">Blue House profile</string>
+    <string name="view_profile">View Profile</string>
+    <string name="tinode_message">Send Blue House message</string>
+    <string name="topic_title">Name of the group</string>
+    <string name="group_members">Group Members</string>
+    <string name="name_required">Topic name required</string>
+    <string name="no_members">No group members</string>
+    <string name="add_one_member">Add at least one group member</string>
+    <string name="add_members">Add members</string>
+    <string name="leave_group">Leave group</string>
+    <string name="id">ID:</string>
+    <string name="topic_muted">Muted</string>
+    <string name="permissions">Permissions</string>
+    <string name="your_permissions">Yours</string>
+
+    <string name="no_connection">You are offline</string>
+    <string name="action_failed">Action failed</string>
+
+    <string name="placeholder_contact_title">Unnamed or unknown</string>
+    <string name="placeholder_topic_title">Unnamed</string>
+    <string name="placeholder_private">Private info: not set</string>
+
+    <string name="options_menu">Options menu</string>
+    <string name="current_user">You</string>
+    <string name="default_permissions">Default permissions</string>
+    <string name="auth_permissions">Authenticated users</string>
+    <string name="anon_permissions">Anonymous users</string>
+    <string name="topic_private">Additional info (visible to you only)</string>
+    <string name="edit_topic">Edit Topic</string>
+    <string name="edit_permissions">Edit Permissions</string>
+
+    <string name="permission_owner">Full control (owner)</string>
+    <string name="permission_join">Join</string>
+    <string name="permission_read">Read</string>
+    <string name="permission_write">Write</string>
+    <string name="permission_approve">Approve new members</string>
+    <string name="permission_share">Invite new members</string>
+    <string name="permission_notifications">Receive notifications</string>
+    <string name="permission_delete">Delete messages</string>
+
+    <string name="send_message">Send message</string>
+    <string name="change_permissions">Change permissions</string>
+    <string name="make_owner">Make owner</string>
+    <string name="remove_from_group">Remove</string>
+    <string name="block">Block</string>
+
+    <string name="confirm_member_removal">Remove %1$s from \"%2$s\"?</string>
+    <string name="confirm_member_ban">Remove and ban %1$s from \"%2$s\"?</string>
+    <string name="confirm_leave_topic">Do you really want to leave this conversation?</string>
+    <string name="confirm_delete_topic">Do you really want to delete this conversation for everyone?</string>
+    <string name="confirm_delete_multiple_topics">Do you really want to delete these chats?</string>
+    <string name="modeWriteOnly">write-only</string>
+    <string name="owner_cannot_unsubscribe">Owner cannot unsubscribe</string>
+    <string name="read_receipts_enabled">Send read receipts</string>
+    <string name="typing_notifications_enabled">Show typing notifications</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change password</string>
+    <string name="account_settings">Account settings</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+    <string name="edit_account">Edit account name</string>
+    <string name="invalid_login">Login is invalid</string>
+
+    <string name="default_attachment_name" translatable="false">bluehouse_file_attachment</string>
+    <string name="download_attachment">save</string>
+    <string name="broken_image">Unknown or invalid image format</string>
+    <string name="file_manager_not_found">File manager not found</string>
+    <string name="attachment_too_large">The file size %1$s exceeds the %2$s limit.</string>
+
+    <string name="failed_to_download">Failed to download the file</string>
+    <string name="failed_to_save_download">Failed to save downloaded file</string>
+    <string name="failed_to_open_file">No application can view the file of this type</string>
+    <string name="failed_empty_password">Not changed: empty password</string>
+    <string name="failed_credential_confirmation">Incorrect confirmation code</string>
+    <string name="failed_to_create_topic">Failed to create topic</string>
+
+    <string name="contacts_section_contacts">Phone Contacts</string>
+    <string name="contacts_section_directory">Directory</string>
+
+    <string name="email">Email</string>
+    <string name="email_required">Email required</string>
+    <string name="validate_cred">Enter confirmation code sent to you by %1$s:</string>
+    <string name="validate_cred_title">Confirm contact</string>
+    <string name="confirm">Confirm</string>
+    <string name="validation_example">Numbers only</string>
+    <string name="enter_confirmation_code">Enter confirmation code</string>
+    <string name="hint_add_by_id">Enter topic or user ID</string>
+    <string name="hint_search_tags">Search by tags</string>
+    <string name="topic_not_found_or_invalid">Topic not found or invalid</string>
+    <string name="sending_disabled">Not available</string>
+    <string name="download_title">Blue House download</string>
+    <string name="some_permissions_missing">Please grant all requested permissions.</string>
+    <string name="unable_to_attach_file">Unable to attach this file</string>
+    <string name="cancelled">cancelled</string>
+    <string name="login_rejected">Login rejected</string>
+    <string name="email_rejected">Email rejected</string>
+    <string name="invalid_confirmation_code">Invalid code</string>
+    <string name="notification_channel_name">New message</string>
+    <string name="new_message">New message</string>
+    <string name="notification_channel_description">New message was received</string>
+    <string name="request_pass_reset_title">Password reset</string>
+    <string name="request_pass_reset">Request code by %1$s:</string>
+    <string name="validated_address_to_use">Validated %1$s to send code to</string>
+    <string name="request">Request</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="enter_valid_address">Enter valid %1$s</string>
+    <string name="invalid_or_unknown_credential">Invalid or unknown address</string>
+    <string name="password_reset_message_sent">Message with instructions sent</string>
+    <string name="user_not_found">Not found</string>
+    <string name="topic_tags">Tags, comma separated list</string>
+    <string name="sender_unknown">Unknown</string>
+    <string name="action_archive">Archive</string>
+    <string name="archived_chats">Archived Chats</string>
+    <string name="action_show_archive">Archived chats</string>
+    <string name="request_new_chat_title">New Chat</string>
+    <string name="request_new_chat_message">You are invited to start a new chat. What would you like to do?</string>
+    <string name="new_chat_accept">Accept</string>
+    <string name="new_chat_ignore">Ignore</string>
+    <string name="new_chat_block">Block</string>
+    <string name="new_chat">New chat</string>
+    <string name="messages_not_readable">No access to new messages</string>
+    <string name="content_deleted">content deleted</string>
+    <string name="peers_messaging_disabled">Peer\'s messaging is disabled</string>
+    <string name="action_enable">Enable</string>
+    <string name="find">Find</string>
+    <string name="by_id">By ID</string>
+    <string name="group">Group</string>
+    <string name="id_required">ID is required</string>
+    <string name="settings">Settings</string>
+    <string name="no_results">No results</string>
+    <string name="file_name_label">File name:</string>
+    <string name="content_type_label">Content type:</string>
+    <string name="image_size_label">Size:</string>
+    <string name="must_subscribe_first">Must subscribe first</string>
+    <string name="topic_blocked">Blocked</string>
+    <string name="topic_archived">Archived</string>
+    <string name="action_unarchive">Unarchive</string>
+    <string name="action_invite">Invite</string>
+    <string name="tags_management">Tags</string>
+    <string name="contacts">Contacts</string>
+    <string name="add_contact">Add another</string>
+    <string name="manage">Manage</string>
+    <string name="delete">Delete</string>
+    <string name="add_credential">Enter email or phone number</string>
+    <string name="unrecognized_credential">Invalid or unrecognized validation method</string>
+    <string name="add_credential_title">Add contact</string>
+    <string name="delete_credential_title">Delete contact</string>
+    <string name="delete_credential_confirmation">Are you sure you want to remove %1$s:%2$s?</string>
+    <string name="leave_conversation">Leave Conversation</string>
+    <string name="confirm_delete_account">Are you sure you want to permanently delete your account? This action is irreversible.</string>
+    <string name="block_contact">Block Contact</string>
+    <string name="report_contact">Report Contact</string>
+    <string name="report_group">Report Group</string>
+    <string name="clear_messages">Clear Messages</string>
+    <string name="manage_members">Manage Members</string>
+    <string name="block_and_report">Block and report</string>
+    <string name="confirm_contact_ban">Block %1$s?</string>
+    <string name="confirm_report">Block and report %1$s?</string>
+    <string name="legal">Legal</string>
+    <string name="terms_of_use"><![CDATA[<a href=\"https://bluehouse.co/terms.html\">Terms of Use</a>]]></string>
+    <string name="contact_us"><![CDATA[<a href=\"mailto:support@bluehouse.co\">Contact Us</a>]]></string>
+    <string name="privacy_policy"><![CDATA[<a href=\"https://bluehouse.co/privacy.html\">Privacy Policy</a>]]></string>
+    <string name="button_hint_start_new_chat">Start new chat</string>
+    <string name="app_server">Server</string>
+    <string name="full_name_required">Full name required</string>
+
+    <string name="default_contact_name">Blue House User %1$s</string>
+    <string name="permission_missing">Required permission missing</string>
+    <string name="enter_search_query">Enter search query</string>
+    <string name="image_caption_hint">Image caption</string>
+    <string name="action_download">Download</string>
+    <string name="tinode_image" translatable="false">bluehouse_image</string>
+    <string name="invalid_content">invalid content</string>
+    <string name="failed">failed</string>
+    <string name="processing">processing …</string>
+    <string name="incognito_mode_enabled">Incognito mode</string>
+    <string name="about_the_app">About the Application</string>
+    <string name="general">General</string>
+    <string name="delete_account">Delete account</string>
+    <string name="help">Help</string>
+    <string name="security">Security</string>
+    <string name="notifications">Notifications</string>
+    <string name="user_tags_description">Others can find you by these tags</string>
+    <string name="help_explained">Support, legal, about</string>
+    <string name="security_explained">Password, permissions, deleting account</string>
+    <string name="topic_tags_description">Others can find topic by these tags</string>
+    <string name="permissions_explained">Access permissions, search tags</string>
+    <string name="delete_group">Delete group</string>
+
+    <string name="topic_default_permissions_explained">New members automatically receive these permissions</string>
+    <string name="user_default_permissions_explained">Others start conversations with you with these permissions</string>
+    <string name="confirm_delmsg_for_all">Are you sure you want to delete all messages for all participants?</string>
+    <string name="confirm_delmsg_for_self">Are you sure you want to delete all messages? You delete them only for yourself.</string>
+    <string name="licenses">Licenses</string>
+    <string name="invalid_file" translatable="false">invalid</string>
+    <string name="blocked_contacts">Blocked contacts</string>
+    <string name="action_restore">Unblock</string>
+    <string name="send_to">Send to…</string>
+    <string name="never">never</string>
+    <string name="just_now">just now</string>
+
+    <string name="image_too_small">Image is too small</string>
+    <string name="title_activity_bluehouse__settings">bluehouse_SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

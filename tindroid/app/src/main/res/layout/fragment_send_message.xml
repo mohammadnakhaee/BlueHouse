@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sendMessagePanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6sp"
+    android:visibility="visible"
+    tools:ignore="RtlSymmetry">
+
+    <ImageButton
+        android:id="@+id/attachImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/send_image_button_hint"
+        android:paddingLeft="6sp"
+        android:paddingRight="6sp"
+        android:tint="?attr/colorAccent"
+        app:srcCompat="@drawable/ic_photo"/>
+
+    <ImageButton
+        android:id="@+id/attachFile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/send_file_button_hint"
+        android:paddingLeft="6sp"
+        android:paddingRight="6sp"
+        android:tint="?attr/colorAccent"
+        app:srcCompat="@drawable/ic_attach"/>
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/new_message_hint"
+        android:imeOptions="actionSend"
+        android:textColor="?android:textColorPrimary"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLines="3"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/chatSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/send_message_button_hint"
+        android:paddingLeft="4sp"
+        android:paddingRight="8sp"
+        android:tint="?attr/colorAccent"
+        app:srcCompat="@drawable/ic_send"/>
+
+</LinearLayout>

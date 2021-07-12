@@ -1,0 +1,80 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditTextPreference
+        app:title=""
+        app:useSimpleSummaryProvider="false" />
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Recovery">
+
+        <Preference android:title="Autosave"
+            android:key="autosave"
+            android:summary="Enabled"/>
+
+        <Preference android:title="Cloud"
+            android:key="cloud"
+            android:summary="Disable"/>
+
+        <SwitchPreferenceCompat
+            app:key="dssd"
+            app:title="Send sms" />
+
+        <SwitchPreferenceCompat
+            app:key="adssdss"
+            app:title="Save groups"
+            app:summaryOff="Do not save groups"
+            app:summaryOn="Save groups"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Security">
+
+        <Preference android:title="Add login password"
+            android:key="addloginpassword"
+            android:summary="Add extra credencial"/>
+
+        <Preference android:title="Add payment password"
+            android:key="addpaymentpassword"
+            android:summary="Add extra credencial for auto payments"/>
+
+        <Preference android:title="Sign out"
+            android:key="Signoutfrombluehouse"
+            android:summary="Sign out of Blue House"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

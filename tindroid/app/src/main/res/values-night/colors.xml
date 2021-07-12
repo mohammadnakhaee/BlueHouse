@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMessageBubbleMine">#FF202020</color>
+    <color name="colorMessageBubbleOther">#FF002008</color>
+    <color name="colorMessageBubbleMeta">#FF000820</color>
+
+    <color name="colorChipBackground">#212121</color>
+    <color name="colorChipBorder">#666666</color>
+
+    <color name="colorAccent">#26A69A</color>
+
+    <color name="colorDanger">#d32f2f</color>
+
+    <color name="colorOffline">#999900</color>
+
+    <color name="colorImagePreviewBg">#333333</color>
+</resources>

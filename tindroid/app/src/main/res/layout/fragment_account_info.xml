@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_default_margin"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    tools:context=".AccountInfoFragment">
+
+    <RelativeLayout
+        android:id="@+id/personal"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="@dimen/avatar_size_large"
+            android:layout_height="@dimen/avatar_size_large"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4sp"
+            android:contentDescription="@string/avatar"
+            app:srcCompat="@drawable/ic_person_grey" />
+
+        <TextView
+            android:id="@+id/topicTitle"
+            style="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/imageAvatar"
+            android:maxLines="2"
+            android:textIsSelectable="true"
+            android:ellipsize="end"
+            tools:text="User name" />
+
+        <TextView
+            android:id="@+id/topicAddress"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topicTitle"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true"
+            android:typeface="monospace"
+            android:ellipsize="end"
+            tools:text="usrfv2qrUr6vAd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/imageAvatar"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/listPreferredItemHeight"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/settings_icon_size"
+            android:layout_height="@dimen/settings_icon_size"
+            android:src="@drawable/ic_notifications"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            style="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/notifications" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/listPreferredItemHeight"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/icon_security"
+            android:layout_width="@dimen/settings_icon_size"
+            android:layout_height="@dimen/settings_icon_size"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_security"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/security_text"
+            style="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/icon_security"
+            android:text="@string/security" />
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/icon_security"
+            android:layout_below="@id/security_text"
+            android:text="@string/security_explained" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/listPreferredItemHeight"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/icon_help"
+            android:layout_width="@dimen/settings_icon_size"
+            android:layout_height="@dimen/settings_icon_size"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_contact_support"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/help_text"
+            style="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/icon_help"
+            android:text="@string/help" />
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/icon_help"
+            android:layout_below="@id/help_text"
+            android:text="@string/help_explained" />
+
+    </RelativeLayout>
+
+</LinearLayout>

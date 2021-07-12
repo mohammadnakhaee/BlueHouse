@@ -1,0 +1,316 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_default_margin"
+    android:descendantFocusability="afterDescendants"
+    tools:context=".TopicInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageAvatar"
+                android:layout_width="@dimen/avatar_size_large"
+                android:layout_height="@dimen/avatar_size_large"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4sp"
+                android:clickable="true"
+                android:contentDescription="@string/avatar"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_group_grey" />
+
+            <Button
+                android:id="@+id/uploadAvatar"
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:layout_alignBottom="@id/imageAvatar"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="2sp"
+                android:background="@drawable/pill_counter"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                app:drawableTopCompat="@drawable/ic_add_a_photo" />
+
+            <TextView
+                android:id="@+id/topicTitle"
+                style="@style/textPrimaryLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@id/imageAvatar"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLines="2"
+                android:textIsSelectable="false"
+                android:layout_marginBottom="@dimen/activity_padding"
+                android:background="@drawable/dotted_line"
+                tools:text="Topic title (public)" />
+
+            <TextView
+                android:id="@+id/topicSubtitle"
+                style="@style/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topicTitle"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:layout_marginBottom="@dimen/activity_padding"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/imageAvatar"
+                android:background="@drawable/dotted_line"
+                tools:text="Topic subtitle (private)" />
+
+            <LinearLayout
+                android:id="@+id/topicAddressWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topicSubtitle"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/imageAvatar">
+
+                <TextView
+                    style="@style/textSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:text="@string/id"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/topicAddress"
+                    style="@style/textSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="monospace"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textIsSelectable="true"
+                    android:typeface="monospace"
+                    tools:text="p2p__fv2qrUr6vAdVURkv6q3w" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/textPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/topic_muted" />
+
+            <Switch
+                android:id="@+id/switchMuted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <TextView
+                style="@style/textPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/topic_archived" />
+
+            <Switch
+                android:id="@+id/switchArchived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/permissions"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/listPreferredItemHeight"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_security"
+                android:layout_width="@dimen/settings_icon_size"
+                android:layout_height="@dimen/settings_icon_size"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_key"
+                android:tint="@color/colorAccent"
+                android:contentDescription="@string/permissions" />
+
+            <TextView
+                android:id="@+id/security_text"
+                style="?android:textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/icon_security"
+                android:text="@string/permissions" />
+
+            <TextView
+                style="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_text"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/icon_security"
+                android:text="@string/permissions_explained" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/singleUserPermissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/textPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/permissions"/>
+
+            <TextView
+                android:id="@+id/permissionsSingle"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="?android:textColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dotted_line"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:fontFamily="monospace"
+                android:textIsSelectable="false"
+                android:typeface="monospace"
+                tools:text="RWPD"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonClearMessages"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="?android:textColorPrimary"
+            android:text="@string/clear_messages"
+            android:textColor="?android:textColorPrimary"
+            app:drawableStartCompat="@drawable/ic_delete" />
+
+        <Button
+            android:id="@+id/buttonLeave"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="?android:textColorPrimary"
+            android:text="@string/leave_conversation"
+            android:textColor="?android:textColorPrimary"
+            app:drawableStartCompat="@drawable/ic_exit" />
+
+        <Button
+            android:id="@+id/buttonDeleteGroup"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/colorDanger"
+            android:text="@string/delete_group"
+            android:textColor="@color/colorDanger"
+            app:drawableStartCompat="@drawable/ic_delete_red" />
+
+        <Button
+            android:id="@+id/buttonBlock"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/colorDanger"
+            android:text="@string/block_contact"
+            android:textColor="@color/colorDanger"
+            app:drawableStartCompat="@drawable/ic_block_red" />
+
+        <Button
+            android:id="@+id/buttonReportContact"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/colorDanger"
+            android:text="@string/report_contact"
+            android:textColor="@color/colorDanger"
+            app:drawableStartCompat="@drawable/ic_report_red" />
+
+        <Button
+            android:id="@+id/buttonReportGroup"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/colorDanger"
+            android:text="@string/report_group"
+            android:textColor="@color/colorDanger"
+            app:drawableStartCompat="@drawable/ic_report_red" />
+
+        <LinearLayout
+            android:id="@+id/groupMembersWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonAddMembers"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@id/membersTitle"
+                android:contentDescription="@string/manage_members"
+                android:drawablePadding="4sp"
+                android:drawableTint="?android:textColorPrimary"
+                android:text="@string/add_members"
+                android:textColor="?android:textColorPrimary"
+                app:drawableStartCompat="@drawable/ic_person_add" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/groupMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonAddMembers" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

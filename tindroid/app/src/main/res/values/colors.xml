@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="colorFloatButton">#FF500000</color>
+
+    <color name="colorAccentLight">#FF700000</color>
+    <color name="colorAccent">#FF600000</color>
+    <color name="colorAccentDark">#FF500000</color>
+
+    <color name="colorDanger">#B71C1C</color>
+
+    <color name="colorTextPlaceholder">#80999999</color>
+
+    <color name="colorChipBackground">#eeeeee</color>
+    <color name="colorChipBorder">#999999</color>
+
+    <color name="colorGray">#cccccc</color>
+    <color name="colorDarkerGray">#999999</color>
+
+    <color name="colorPillCounter">#FF980000</color>
+
+    <color name="colorUserOnline">#FF40C040</color>
+    <color name="colorUserOnlineH1">#FF30D030</color>
+    <color name="colorUserOnlineH2">#FF10EE10</color>
+    <color name="colorUserOnlineH3">#FF00FF00</color>
+
+    <color name="colorSplashScreenBackground">#FFFFFF</color>
+
+    <color name="colorNotificationBackground">#3949AB</color>
+
+    <color name="colorOffline">#FFFFFF66</color>
+
+    <color name="colorMessageSelected">#2f3F51B5</color>
+
+    <color name="colorBorderGray">#9E9E9E</color>
+
+    <!-- Background of message bubbles-->
+    <color name="colorMessageBubbleMine">#801c4777</color>
+    <color name="colorMessageBubbleOther">#8093abc5</color>
+    <color name="colorMessageBubbleMeta">#AA500000</color>
+
+    <!-- Indicator of user's online/offline status -->
+    <color name="online">#FF40C040</color>
+    <color name="offline">#FFC0C0C0</color>
+
+    <!-- Background color in avatar uploads -->
+    <color name="colorImagePreviewBg">#CCCCCC</color>
+
+    <!-- Background colors for LetterTileDrawables. -->
+    -->
+    <array name="letter_tile_colors_light">
+        <item>#ef9a9a</item>
+        <item>#90caf9</item>
+        <item>#b0bec5</item>
+        <item>#b39ddb</item>
+        <item>#ffab91</item>
+        <item>#a5d6a7</item>
+        <item>#dddddd</item>
+        <item>#e6ee9c</item>
+        <item>#c5e1a5</item>
+        <item>#fff59d</item>
+        <item>#f48fb1</item>
+        <item>#9fa8da</item>
+        <item>#ffe082</item>
+        <item>#bcaaa4</item>
+        <item>#80deea</item>
+        <item>#ce93d8</item>
+    </array>
+    <color name="letter_tile_text_color_light">#ffffff</color>
+
+    <!-- Darker versions of letter_tile_colors, two shades darker. -->
+    <array name="letter_tile_colors_dark">
+        <item>#C62828</item>
+        <item>#AD1457</item>
+        <item>#6A1B9A</item>
+        <item>#4527A0</item>
+        <item>#283593</item>
+        <item>#1565C0</item>
+        <item>#0277BD</item>
+        <item>#00838F</item>
+        <item>#00695C</item>
+        <item>#2E7D32</item>
+        <item>#558B2F</item>
+        <item>#9E9D24</item>
+        <item>#F9A825</item>
+        <item>#FF8F00</item>
+        <item>#EF6C00</item>
+        <item>#D84315</item>
+    </array>
+    <color name="letter_tile_text_color_dark">#dedede</color>
+
+</resources>
